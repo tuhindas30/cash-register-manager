@@ -18,12 +18,8 @@ small {
   font-weight: 400;
 }
 
-h2 {
-  padding: 1rem 0;
-}
-
 input {
-  width: 60%;
+  width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
   text-align: center;
@@ -38,8 +34,9 @@ button {
   display: block;
   border: none;
   border-radius: 5px;
+  width: 40%;
   margin: 1.5rem auto;
-  padding: 10px 50px;
+  padding: 0.5rem;
   font-size: 1.1rem;
   font-weight: bold;
   background-color: var(--primary-color);
@@ -51,10 +48,6 @@ button:hover {
   color: yellow;
 }
 
-table {
-  margin: auto;
-}
-
 table,
 tr,
 th,
@@ -62,44 +55,124 @@ td {
   text-align: center;
   border: 2px solid black;
   border-collapse: collapse;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
 
 .navigation {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .navigation .nav-brand {
   font-weight: bold;
-  font-size: 1.1rem;
-  margin: 5px auto;
-  padding: 5px 0;
+  padding: 0.5rem;
   text-align: center;
 }
 
-.form-container {
-  margin: 1rem;
+.flex-container {
   display: flex;
-  padding: 1rem;
-}
-
-.form,
-.cash-drawer {
-  width: 50%;
-  margin: 1rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #9ca3af;
-  float: left;
+  justify-content: space-evenly;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .return-balance {
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
-  margin: auto;
-  padding: 1rem 0;
+}
+
+@media (max-width: 418px) {
+  h2 {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .navigation .nav-brand {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-basis: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #9ca3af;
+  }
+}
+
+@media (min-width: 418px) and (max-width: 768px) {
+  h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 80%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #9ca3af;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 945px) {
+  h2 {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .card {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #9ca3af;
+  }
+}
+
+@media (min-width: 945px) {
+  h2 {
+    padding: 1rem;
+  }
+
+  .card {
+    display: flex;
+    margin: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #9ca3af;
+  }
 }

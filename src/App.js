@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="form-container">
+      <div className="flex-container">
         <Form onFormSubmit={handlePay} />
 
         <CashDrawer requiredNote={requiredNote} />
@@ -24,24 +24,24 @@ const App = () => {
       <div className="return-balance">
         {isReturnBalance ? (
           returnBalance < 0 ? (
-            <h1>
+            <h2>
               Please pay Rs.{" "}
               <span style={{ color: "var(--primary-color)" }}>
                 {" "}
                 {-returnBalance}{" "}
               </span>
               more
-            </h1>
+            </h2>
           ) : returnBalance === 0 ? (
-            <h1>No need to Pay!</h1>
+            <h2>No need to Pay!</h2>
           ) : (
-            <h1>
-              Return Balance :{" "}
+            <h2>
+              Return Balance:{" "}
               <span style={{ color: "var(--primary-color" }}>
                 {" "}
                 {returnBalance}
               </span>
-            </h1>
+            </h2>
           )
         ) : (
           ""

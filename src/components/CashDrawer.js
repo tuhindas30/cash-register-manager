@@ -5,28 +5,30 @@ const CashDrawer = ({ requiredNote }) => {
   if (noteValue.length < 1) return <></>;
 
   return (
-    <div className="cash-drawer form-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Note Value</th>
-            <th>Number of notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          {noteValue.map((value) => (
-            <tr key={value}>
-              <td>{value}</td>
-              <td>{requiredNote[value]}</td>
+    <div className="card">
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Note Value</th>
+              <th>Number of notes</th>
             </tr>
-          ))}
-        </tbody>
-        <tfoot>
-          <tr>
-            <th colSpan="2">Total notes : {count.reduce((a, b) => a + b)}</th>
-          </tr>
-        </tfoot>
-      </table>
+          </thead>
+          <tbody>
+            {noteValue.map((value) => (
+              <tr key={value}>
+                <td>{value}</td>
+                <td>{requiredNote[value]}</td>
+              </tr>
+            ))}
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colSpan="2">Total notes : {count.reduce((a, b) => a + b)}</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
   );
 };

@@ -19,30 +19,32 @@ const Form = ({ onFormSubmit }) => {
   }
 
   return (
-    <div className="form">
-      <form onSubmit={handleSubmit}>
-        <h2>Enter the Bill Amount</h2>
-        <input
-          name="billAmount"
-          type="number"
-          onChange={handleChange}
-          value={formData.billAmount}
-          placeholder="Amount needs to be paid"
-        ></input>
-        {!!formData.billAmount && (
-          <div>
-            <h2>Enter the Cash Amount</h2>
-            <input
-              name="cashAmount"
-              type="number"
-              onChange={handleChange}
-              value={formData.cashAmount}
-              placeholder="Cash amount paid"
-            ></input>
-            {!!formData.cashAmount && <button type="submit">Pay</button>}
-          </div>
-        )}
-      </form>
+    <div className="card">
+      <div>
+        <form onSubmit={handleSubmit}>
+          <h2>Enter the Bill Amount</h2>
+          <input
+            name="billAmount"
+            type="number"
+            onChange={handleChange}
+            value={formData.billAmount}
+            placeholder="Amount needs to be paid"
+          ></input>
+          {!!formData.billAmount && (
+            <div>
+              <h2>Enter the Cash Amount</h2>
+              <input
+                name="cashAmount"
+                type="number"
+                onChange={handleChange}
+                value={formData.cashAmount}
+                placeholder="Cash amount paid"
+              ></input>
+              {!!formData.cashAmount && <button type="submit">Pay</button>}
+            </div>
+          )}
+        </form>
+      </div>
     </div>
   );
 };
