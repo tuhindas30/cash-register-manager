@@ -1,7 +1,7 @@
 # Cash Register Manager
 
 <p align="center">
-  <img alt="screenshot of cash register manager" src="https://i.imgur.com/3UULWP4.png">
+  <img alt="screenshot of cash register manager" src="https://i.imgur.com/uUs8VoM.gif">
 </p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/025e82dd-2d6d-4b9a-b502-08ce8e7dc2fb/deploy-status)](https://app.netlify.com/sites/cashregistermanager/deploys) ![GitHub language count](https://img.shields.io/github/languages/count/tuhindas-td/cash-register-manager) ![GitHub top language](https://img.shields.io/github/languages/top/tuhindas-td/cash-register-manager) ![Website](https://img.shields.io/website?url=https://cashregistermanager.netlify.app/)
